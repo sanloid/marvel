@@ -5,6 +5,7 @@ import RouteInfo from 'RouteInfo';
 import Favourites from 'pages/Favourites';
 import PageBase from 'pages/PageBase';
 import Detail from 'pages/Detail';
+import StartPage from 'pages/StartPage';
 import Layout from './Layout';
 import './index.css';
 
@@ -12,6 +13,7 @@ const App: FC = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
+        <Route path="" element={<StartPage />} />
         {RouteInfo.map((e) => (
           <>
             <Route
